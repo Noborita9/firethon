@@ -1,5 +1,4 @@
-import json
-from request_master import RequestMaster
+from utils.request_master import RequestMaster
 
 
 class Auth():

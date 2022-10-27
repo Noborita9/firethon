@@ -2,8 +2,8 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.contrib.appengine import is_appengine_sandbox
 from requests_toolbelt.adapters import appengine
-from auth import Auth
-from endpoint_master import EndpointMaster
+from modules.auth import Auth
+from utils.endpoint_master import EndpointMaster
 
 
 class Firebase():
