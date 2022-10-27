@@ -1,4 +1,4 @@
-urls = {
+auth_endpoints = {
     "refresh_with_custom_token": {
         "url": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key=",
         "method": "POST",
@@ -95,7 +95,7 @@ urls = {
         "headers": {"content-type": "application/json"}
     },
     "delete_account": {
-        "url": "https://identitytoolkit.googleapis.com/v1/accounts:delete?key=[API_KEY]",
+        "url": "https://identitytoolkit.googleapis.com/v1/accounts:delete?key=",
         "method": "POST",
         "headers": {"content-type": "application/json"}
     },
