@@ -34,12 +34,12 @@ auth_endpoints = {
         "method": "POST",
         "headers": {"content-type": "application/json"}
     },
-    "reset_password_with_mail": {
+    "reset_password_with_email": {
         "url": "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=",
         "method": "POST",
         "headers": {"content-type": "application/json"}
     },
-    "verify_password_reset_with_mail": {
+    "verify_password_reset_with_email": {
         "url": "https://identitytoolkit.googleapis.com/v1/accounts:createAuthUri?key=",
         "method": "POST",
         "headers": {"content-type": "application/json"}
@@ -69,7 +69,7 @@ auth_endpoints = {
         "method": "POST",
         "headers": {"content-type": "application/json"}
     },
-    "link_email_password": {
+    "link_with_email_and_password": {
         "url": "https://identitytoolkit.googleapis.com/v1/accounts:update?key=",
         "method": "POST",
         "headers": {"content-type": "application/json"}

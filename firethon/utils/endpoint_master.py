@@ -1,4 +1,4 @@
-from constants import auth_endpoints
+from .constants import auth_endpoints
 
 
 class EndpointMaster():
