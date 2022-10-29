@@ -2,7 +2,8 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.contrib.appengine import is_appengine_sandbox
 from requests_toolbelt.adapters import appengine
-from modules.auth import Auth
+from modules.auth import Auth 
+from modules.database import Database
 from utils.endpoint_master import EndpointMaster
 
 
@@ -26,3 +27,7 @@ class Firebase():
 
     def auth(self):
         return Auth(EndpointMaster(self.api_key, "auth"), self.requests, self.credentials)
+
+    def database(self):
+        return Database(EndpointMaster(self.api_key, "database"), self.requests, self.credentials)
+
