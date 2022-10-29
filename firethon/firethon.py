@@ -25,5 +25,4 @@ class Firebase():
             self.requests.mount(scheme, http)
 
     def auth(self):
-
         return Auth(EndpointMaster(self.api_key, "auth"), self.requests, self.credentials)

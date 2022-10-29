@@ -13,7 +13,5 @@ config = {
 
 app = Firebase(config)
 auth = app.auth()
-user = auth.sign_up_with_email_and_password("nahuel123@gmail.com", "coolpass123")
 login = auth.sign_in_with_email_and_password("nahuel123@gmail.com", "coolpass123")
-print(login)
-print(user)
+
